@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build LaTeX",
+			"type": "shell",
+			"command": "pdflatex",
+			"args": [
+				"-interaction=nonstopmode",
+				"${file}"
+			],
+			"options": {
+				"env": {
+					"TEXINPUTS": ".:/workspace/classes//:"
+				}
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Build LaTeX Twice",
+			"command": "sh",
+			"args": [
+				"-c",
+				"pdflatex -interaction=nonstopmode \"${file}\" && pdflatex -interaction=nonstopmode \"${file}\""
+			],
+			"options": {
+				"env": {
+					"TEXINPUTS": ".:/workspace/classes//:"
+				}
+			},
+			"dependsOrder": "sequence",
+			"problemMatcher": []
+		}
+	]
+}
