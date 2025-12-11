@@ -70,6 +70,8 @@
 				"latex-workshop.synctex.afterBuild.enabled": true
 			},
 			"extensions": [
+				"github.copilot",
+		        "github.copilot-chat",
 				"James-Yu.latex-workshop"
 			]
 		}
