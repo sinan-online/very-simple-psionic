@@ -20,7 +20,7 @@ jobs:
       - name: pdflatex main
         uses: dante-ev/latex-action@latest
         env:
-          TEXINPUTS: ".:${{ github.workspace }}/classes//:"
+          TEXINPUTS: ".:/github/workspace/classes//:"
         with:
           root_file: tex/${{ env.BASENAME }}.tex
           compiler: pdflatex
@@ -29,7 +29,7 @@ jobs:
       - name: pdflatex main 2
         uses: dante-ev/latex-action@latest
         env:
-          TEXINPUTS: ".:${{ github.workspace }}/classes//:"
+          TEXINPUTS: ".:/github/workspace/classes//:"
         with:
           root_file: tex/${{ env.BASENAME }}.tex
           compiler: pdflatex
