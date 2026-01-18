@@ -7,3 +7,9 @@ ENV TEXINPUTS=.:/workspace/classes//:
 
 RUN tlmgr update --self
 RUN tlmgr update --all
+
+RUN useradd -m vscode && \
+    mkdir -p /home/vscode && \
+    chown -R vscode:vscode /home/vscode
+
+CMD ["/bin/bash"]
