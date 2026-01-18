@@ -1,9 +1,24 @@
 \documentclass[twocolumn]{dndbook}
 
+% Ensure the graphics path is set correctly
+\graphicspath{{../images/}}
+
+\usepackage{graphicx}
+\usepackage{geometry}
 
 \begin{document}
 
-\chapter*{Simply Psionics}
+\newgeometry{margin=0pt}
+\begin{titlepage}
+  \noindent
+  \includegraphics[width=\paperwidth,height=\paperheight]{531ca660-e751-42c9-9b76-6d50020a53b8.png}
+\end{titlepage}
+\restoregeometry
+
+% Reset page counter so the next page is page 1
+\setcounter{page}{1}
+
+\chapter*{Simple Psionics}
 
 This is a psionics system designed to be very easy to play, without any accounting of psi points or complex powers.
 It is meant to be a pluggable option, rather than a class.
