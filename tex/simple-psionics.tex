@@ -1,9 +1,9 @@
 \documentclass[twocolumn]{dndbook}
 
-% Ensure the graphics path is set correctly
-\graphicspath{{../images/}}
-
+% Ensure the graphics path is set correctly (after loading graphicx)
 \usepackage{graphicx}
+% Search both from repo root and from the tex/ working directory
+\graphicspath{{images/}{../images/}}
 \usepackage{geometry}
 
 \begin{document}
@@ -53,12 +53,23 @@ This can be thought of as the toll that psychic powers take on the user.\par
 \section*{Telekinesis}
 
 Telekinesis is a collection of five feats, and players can take as many as they want.
-Choose a spellcasting ability between Charisma, Intelligence, or Wisdom, but discuss with the DM.
-\footnote{This gives the player or character to flesh out their background, based on the setting and how they acquired their psionic abilities.}
+Choose a spellcasting ability between Charisma and Wisdom, but discuss with the DM.
+\footnote{For instance, in a setting where psionics is developed through meditation and mental discipline, Wisdom might be the best choice, but if the character is born with the ability, Charisma might be more appropriate.}
 Use it for all of the spell effects granted by that feat.
 Constitution saving throw DCs are rolled after each use.
 If there is a duration, roll the saving throw at the end of the duration.
 If it requires concentration, roll the saving throw when concentration ends.
+
+
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\columnwidth]{ce5c3ddb-5c68-4fb6-8130-ca00fe9ae04a.png}
+  \caption{Telekinesis kiddo in action. Generated using ChatGPT.}
+  \label{fig:telekinesis}
+\end{figure}
+
+
 
 \subsection{Telekinesis I}
 {\emph{Origin Feat}}\par
@@ -150,12 +161,34 @@ before you must roll the Constitution saving throw for exhaustion.
 
 \section*{Telepathy}
 
-
-Your spellcasting ability for Telepathy depends on the effect.
-
+Telepathy is a collection of five feats, and players can take as many as they want.
+Choose a spellcasting ability between Charisma and Wisdom, but discuss with the DM.
+\footnote{For instance, in a setting where psionics is developed through meditation and mental discipline, Wisdom might be the best choice, but if the character is born with the ability, Charisma might be more appropriate.}
 Constitution saving throw DCs are rolled after each use.
 If there is a duration, roll the saving throw at the end of the duration.
-If it requires concentration, roll the saving throw when concentration ends.
+If it requires concentration, roll the saving throw when concentration ends.\par
+
+Note that telepathy can be very powerful in social situations,
+so the DM should consider the implications of allowing these feats in the campaign setting.
+These feats do not give any bonuses to skills, to balance some of the power of telepathy.
+In literature, a telepath (like Professor X, Kilgrave or The Mule from the Foundation, are typically otherwise fairly powerless individuals,
+so I wanted to reflect that in the design of these feats.)\par
+
+
+\subsection*{Detecting Telepathy}
+
+All of the effects that change behaviour can be noticed by a somebody close to the target, such as friends, neighbours, and family.
+For most powers, the Passive Perception of the observer needs to beat the spell attack bonus (8 + proficiency + spellcasting ability modifier) of the telepathic caster to notice.\par
+If the observer succeeds, they can tell that something is wrong, but not necessarily what.
+\footnote{In a setting where psychic powers are common, they may know immediately, but in a setting where they are rare, it might take some time to figure out what is happening. Consider Eberron as an example: somebody from Breland is not necessarily going to recognize an Inspired power, but a Kalashtar likely will.}
+This is going to be a tell-tale sign for most powers, eyes going blank, or a monotone voice.\par
+
+The exception is \emph{Command}, \emph{Dominate Person} and \emph{Dominate Monster} - these spells create a visible sign on the target, such as eyes going completely black, etc\dots
+They do not require a roll by observer, they will immediately know something is wrong.
+In all cases of an observer detecting, they will not necessarily know who the telepath is (unless there is a good reason to suspect the person)\par
+
+Finally, \emph{Calm Emotions} is not detectable at all.\par
+
 
 \subsection{Telepathy I}
 {\emph{Origin Feat}}\par
@@ -163,7 +196,7 @@ Whether by mutation, training, or some other means, you have learned to communic
 You gain the following abilities:
 \paragraph*{Friends} You gain the \emph{Friends} cantrip,
 except it does not require verbal or somatic components.
-Your spellcasting ability for this cantrip is Charisma.
+Your spellcasting ability for this cantrip is Charisma or Wisdom, depending on your choice.
 \paragraph*{Charm Person} You can cast \emph{Charm Person} at will,
 without requiring verbal or somatic components. However, after each use, you must roll a Constitution saving throw (DC 11) or suffer one level of exhaustion.
 \paragraph*{Command} You can cast \emph{Command} at will,
@@ -179,6 +212,18 @@ without requiring verbal or somatic components. However, after each use, you mus
 without requiring verbal or somatic components. However, after each use, you must roll a Constitution saving throw (DC 12) or suffer one level of exhaustion.
 \paragraph*{Suggestion} You can cast \emph{Suggestion} at will,
 without requiring verbal or somatic components. However, after each use, you must roll a Constitution saving throw (DC 12) or suffer one level of exhaustion.
+\paragraph*{Calm Emotions} You can cast \emph{Calm Emotions} at will,
+without requiring verbal or somatic components. However, after each use, you must roll a Constitution saving throw (DC 8) or suffer one level of exhaustion.
+This is the only power that has a lower difficulty, since it is not as directly manipulative as the others.
+
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\columnwidth]{deffd1a3-5914-4a95-b043-b81dd2d44be4.png}
+  \caption{Who is controlling whom? Generated using ChatGPT.}
+  \label{fig:telepathy}
+\end{figure}
+
 
 % TODO: Add Calm Emotions.
 
