@@ -5,13 +5,21 @@
 % Search both from repo root and from the tex/ working directory
 \graphicspath{{images/}{../images/}}
 \usepackage{geometry}
+\usepackage{tikz}
 
 \begin{document}
 
 \newgeometry{margin=0pt}
 \begin{titlepage}
   \noindent
-  \includegraphics[width=\paperwidth,height=\paperheight]{531ca660-e751-42c9-9b76-6d50020a53b8.png}
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north west,inner sep=0pt] at (current page.north west) {
+      \includegraphics[width=\paperwidth,height=\paperheight]{531ca660-e751-42c9-9b76-6d50020a53b8.png}
+    };
+    \node[anchor=south west] at ([xshift=0.5in,yshift=0.5in]current page.south west) {
+      \includegraphics[width=1.25in]{DMsGuildProductLogoLarge.png}
+    };
+  \end{tikzpicture}
 \end{titlepage}
 \restoregeometry
 
